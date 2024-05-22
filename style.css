@@ -1,0 +1,206 @@
+@font-face {
+    font-family: poppinsLight;
+    src: url(letters/Poppins-Light.ttf);
+    font-display: swap
+}
+@font-face {
+    font-family: poppinsExtraLight;
+    src: url(letters/Poppins-ExtraLight.ttf);
+    font-display: swap
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppinsExtraLight;
+    padding: 0;
+}
+
+body{
+    /* display: flex;
+    align-items: center;
+    flex-direction: column; */
+    background-color: #383764;
+}
+
+.title1{
+    display: block;
+    color: #FFFFFF;
+    font-size: 58px;
+    text-align: center;
+}
+
+.contenedorToDoList{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 22px 46px;
+    gap: 24px;
+
+    margin: 0 auto;
+    padding: 30px;
+    width: fit-content;
+    height: fit-content;
+
+    
+    background-color: #d9d9d9;
+    border-radius: 55px;
+}
+
+.conteAgregarTareas{
+    display: flex;
+    align-self: center;
+    flex-wrap: wrap;
+    padding: 12px 20px;
+
+    width: fit-content;
+    height: fit-content;
+
+    background: #555555;
+    border-radius: 20px;
+}
+
+.divAgregarTareas{
+    display: flex;
+}
+
+.btnMasTareas{
+    background-image: url('assets/Mas.png');
+    background-size: cover;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btnMasTareas:hover {
+    background-image: url('assets/Mas2.png');
+    background-size: cover;
+    border: 1px solid #383764;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+#agregarTareas{
+    width: 550px;
+    height: 32px;
+    padding: 4px 19px;
+    background: #D9D9D9;
+    border: none;
+    border-radius: 10px;
+}
+
+.btn2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+
+.btnAgregar{
+    margin-top: 20px;
+    padding: 2px 25px;
+    gap: 10px;
+
+    width: 100px;
+    height: 28px;
+
+    background: #383764;
+    border-radius: 30px;
+    border: none;
+    color: #D9D9D9;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btnAnimation:hover {
+    background: #4a47a3;
+    color: #ffffff; 
+    transform: scale(1.05); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.title2{
+    color: #000;
+    font-size: 32px;
+    text-align: center;
+}
+
+.divListaDeTareas{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px 22px;
+    margin-bottom: 20px;
+
+    width: 630px;
+    min-height: 64px;
+    
+    background: #FFFFFF;
+    border-radius: 35px;
+}
+
+
+.btnTareaRealizada{
+    display: block;
+    background-color: #d9d9d9;
+    min-width: 40px;
+    min-height: 40px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.tarea{
+    width: 100%;
+    list-style: none;
+    font-size: 16px;
+    color: #000000;
+}
+
+.conteBtn3{
+    background: #383764;
+    border-radius: 30px;
+}
+
+.btn3{
+    /* margin-top: 20px; */
+    padding: 10px 30px;
+    gap: 10px;
+
+    font-size: 16px;
+
+    background: #383764;
+    border-radius: 30px;
+    border: none;
+    color: #D9D9D9;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.btnTareaRealizada.completada {
+    /* background-color: #333; */
+    /* border: 1px solid #202020; */
+    background-image: url(assets/TICK.png);
+    background-size: cover;
+}
+
+.divEliminarTarea{
+    display: flex;
+}
+
+.eliminarTarea{
+    background: url(./assets/basura.png);
+    background-size: cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    border: none;
+    cursor: pointer;
+}
